@@ -1,6 +1,7 @@
 const dateOfBirth = document.querySelector("#DoB");
 const luckyNumber = document.querySelector("#Luckynum");
 const checkNumberButton = document.querySelector("#check");
+const outputBox = document.querySelector("#output-box");
 
 checkNumberButton.addEventListener('click',function getValues(){
   console.log(dateOfBirth.value,luckyNumber.value);
@@ -29,7 +30,7 @@ checkNumberButton.addEventListener('click',function getValues(){
     if(sum&&dob)
     compareValues(sum,luckyNumber.value)
     else 
-    outputBox.innerText="Please enter both the fields 😡";
+    outputBox.innerText="Please enter both the fields";
   }
   
  
